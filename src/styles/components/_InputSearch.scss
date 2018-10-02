@@ -1,0 +1,55 @@
+#inputSearch {
+    margin-bottom: 10px;
+    width: 300px;
+    height: $size03;
+    background-color: $cinza03;
+    border: 1px solid $cinza04;
+    font-size: $size05;
+    padding: 10px 15px;
+    border-radius: 60px;
+    color: $branco !important;
+}
+
+#searchIcon {
+    color: $branco;
+    height: $size06;
+    width: $size06;
+    margin-left: -35px;
+}
+
+#title {
+    clear: both;
+    width: 100% !important;
+    padding-left: $spacing16;
+    color: $cinza02;
+}
+
+#spinner {
+    clear: both;
+}
+
+/* TABLETS 768x600 */
+@media screen and (max-width: 768px){
+     #inputSearch{
+        display: none;
+    }                 
+    b {
+        display: none;
+    }
+    #searchIcon {
+        margin-left: 40%;
+    }
+}
+
+/*MOBILE 420x600*/
+@media screen and (max-width: 600px){
+    #inputSearch{
+        display: none;
+    }
+    #searchIcon {
+        margin-left: 40%;
+    }
+    b {
+        display: none;
+    }
+}

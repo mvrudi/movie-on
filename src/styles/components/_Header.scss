@@ -1,0 +1,98 @@
+#headerContainer {
+    clear: both;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+#divLogo {
+    margin-top: 35px;
+    display: flex;
+    margin-left: $spacing16;
+    height: 100px;
+}
+
+#divInput {
+    margin-top: -10px;
+    display: flex;
+    height: 150px;
+}
+
+#divAvatar {
+    margin-top: 35px;
+    display: flex;
+    margin-right: $spacing16;
+    color: $cinza02;
+    height: 100px;
+}
+
+#movieTitle {
+    color: $branco;
+    font-size: $size07;
+}
+
+#onTitle {
+    color: $laranja;
+    font-size: $size07;
+}
+
+#filmIcon {
+    color: $laranja;
+    margin-right: $spacing8;
+    height: $size09;
+    width: $size09;
+    margin-top: -5px;
+}
+
+#avatar {
+    width: $size08;
+    height: $size08;
+    border-radius: 50%;
+}
+
+b {
+    padding: $spacing16;
+}
+
+/* TABLETS 768x600 */
+@media screen and (max-width: 768px){
+    #headerContainer {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+     }
+
+    #divInput {
+        display: flex;
+        margin-right: -300px;
+    }
+}
+
+/*MOBILE 420x600*/
+@media screen and (max-width: 600px){
+    #headerContainer {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+     }
+
+    #divInput {
+        display: flex;
+        margin-right: -100px;
+    }
+
+    #divAvatar {
+        margin-right: $spacing16;
+        padding-left: $spacing16;
+    }
+}
+

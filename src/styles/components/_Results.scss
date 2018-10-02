@@ -1,0 +1,184 @@
+#divContainer {
+    display: inline-block;
+    position: relative;
+    height: 100%; 
+    width: 90%;
+    align-content:  center;
+}
+
+#imgResult {
+    height: 699px;
+    width: 450px;
+    float: left;
+    padding: $spacing24;
+}
+
+#divInfo {
+    margin-top: 220px;
+    padding-right: $spacing16;
+    font-size: $size04;
+    text-shadow: 1px 1px $preto;
+    color: $branco;
+    text-align: left;
+}
+
+#voltarIcon {
+    margin-top: -200px;
+    float: right;
+}
+
+.sinopse {
+    color: $cinza01;
+    word-wrap: break-word;
+}
+
+.info{
+    color: $cinza01;
+}
+
+#voltar {
+    display: none;
+}
+
+
+
+/* TABLETS 768x600 */
+@media screen and (max-width: 768px){
+    #divContainer {
+        display: inline-block;
+        position: relative;
+        height: 543px;
+        width: 350px;
+        align-content: center;
+    }
+
+    #imgResult {
+        height: 543px;
+        width: 350px;
+        float: none;
+    }
+
+    #divContainer:hover {
+        #imgResult {
+            transition-duration: 1s;
+            opacity: 0.3;
+        };
+        #divInfo{
+            opacity: 1;
+            transition-duration: 1s;
+        }
+    }
+
+    #divInfo {
+        height: 543px;
+        width: 350px;
+        opacity: 0;
+        position: absolute;
+        font-size: $size03;
+        text-shadow: 1px 1px $preto;
+        text-align: left;
+        margin-left: 40px;
+        color: $branco;
+        margin-top: -350px;
+    }
+
+    #voltarIcon {
+        float: right;
+        margin-top: - 190px;
+        margin-right: $spacing24;
+    }
+
+    .sinopse {
+        color: $cinza01;
+        word-wrap: break-word;
+        padding-right: $spacing24;
+    }
+
+    #voltar {
+        display: block;
+        margin-top: 10px;
+        height: 45px;
+        width: 330px;
+        background-color: $cinza03;
+        border: 1px solid $cinza04;
+        font-size: $size05;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: $branco;
+    }
+
+    #voltar:hover {
+        cursor: pointer;
+    }
+}
+
+
+/*MOBILE 320x420*/
+@media screen and (max-width: 420px){
+    #divContainer {
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+        height: 543px;
+        width: 350px;
+        align-content: center;
+    }
+
+    #imgResult {
+        height: 543px;
+        width: 350px;
+        float: none;
+    }
+
+    #divContainer:hover {
+        #imgResult {
+            transition-duration: 1s;
+            opacity: 0.3;
+        };
+        #divInfo{
+            opacity: 1;
+            transition-duration: 1s;
+        }
+    }
+
+    #divInfo {
+        height: 543px;
+        width: 350px;
+        opacity: 0;
+        position: absolute;
+        font-size: $size03;
+        text-shadow: 1px 1px $preto;
+        text-align: left;
+        margin-left: $spacing16;
+        color: $branco;
+        margin-top: -350px;
+    }
+
+    #voltarIcon {
+        float: right;
+        margin-top: - 190px;
+        margin-right: $spacing24;
+    }
+
+    .sinopse {
+        color: $cinza01;
+        word-wrap: break-word;
+    }
+
+    #voltar {
+        margin-top: 10px;
+        height: 45px;
+        width: 330px;
+        background-color: $cinza03;
+        border: 1px solid $cinza04;
+        font-size: $size05;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: $branco;
+    }
+
+    #voltar:hover {
+        cursor: pointer;
+    }
+}
+
